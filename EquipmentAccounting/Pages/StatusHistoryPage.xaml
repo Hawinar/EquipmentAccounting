@@ -1,0 +1,37 @@
+﻿<Page x:Class="EquipmentAccounting.Pages.StatusHistoryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EquipmentAccounting.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StatusHistoryPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="717*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid 
+            x:Name="DGStatusHistory"
+            AutoGenerateColumns="False"
+            Grid.Column="1"
+            IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn 
+                    Header="Тип"
+                    Binding="{Binding Equipment.Type}"/>
+                <DataGridTextColumn
+                    Header="Номер" 
+                    Binding="{Binding Equipment.Number}"/>
+                <DataGridTextColumn 
+                    Header="Статус" 
+                    Binding="{Binding Status}"/>
+                <DataGridTextColumn 
+                    Header="Время изменения" 
+                    Binding="{Binding ChangeDate}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
