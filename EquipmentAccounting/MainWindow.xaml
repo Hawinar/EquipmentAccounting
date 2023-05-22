@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EquipmentAccounting"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="1050">
+        Title="Что? Где? Когда?" Height="450" Width="1050">
     <Grid>
         <Grid>
             <StackPanel Grid.Column="0" Background="#FFFD2F2F" Grid.RowSpan="2" Width="64" HorizontalAlignment="Left">
